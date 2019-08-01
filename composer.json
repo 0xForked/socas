@@ -1,0 +1,9 @@
+{
+    "name": "aasumitro/chat-server",
+    "description": "Simple Chat With ReactPHP.",
+    "keywords": ["socket", "async", "ReactPHP"],
+    "type": "project",
+    "require": {
+        "react/socket": "^1.3"
+    }
+}

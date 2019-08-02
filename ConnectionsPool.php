@@ -14,7 +14,7 @@ class ConnectionsPool
 
     public function add(ConnectionInterface $connection)
     {
-        $connection->write("Welcome to the jungle!\n");
+        $connection->write("Welcome to the jungle! \n");
         $connection->write("Please enter your name: ");
         $this->setUserName($connection, '');
         $this->initEvents($connection);
@@ -60,7 +60,7 @@ class ConnectionsPool
     {
         foreach ($this->connections as $connection) {
             if ($connection === $except) {
-                $conn->write($message);
+                $connection->write($message);
             }
         }
     }
